@@ -1,0 +1,61 @@
+body{
+    font-family: sans-serif;
+}
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.commonForm {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+    width: 300px;
+ 
+}
+.form-input{
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.form-button{
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+.error-p{
+    text-align: center;
+    color: red;
+}
+
+.message-p{
+    text-align: center;
+    color: green;
+}
+.carousel-caption{
+    background-color:#00000082;
+    border-radius: 5px; 
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: black;
+    border:5px;
+    margin-left: 20px;
+}
+
+.invalid-input{
+    color: red;
+    font-size: 12px;
+    margin-top: -20px;
+    text-align: left;
+}
+
+button:disabled{
+    cursor: not-allowed;
+}
+
+.max-width{
+    width: 100%;
+}
+

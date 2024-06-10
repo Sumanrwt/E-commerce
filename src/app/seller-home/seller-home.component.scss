@@ -1,0 +1,20 @@
+table{
+    text-align: left;
+    color: hsl(20%, 2%, 35%);
+    border-collapse: collapse;
+}
+table td, table th{
+    border: 1px solid coral;
+    padding: 10px;
+    min-height: 160px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+p{
+    text-align: left;
+}
+fa-icon{
+    padding-inline: 15px;
+}

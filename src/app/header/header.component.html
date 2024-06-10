@@ -1,0 +1,62 @@
+<nav class="nav">
+  <div class="logo">
+    <img (click)="home()" src="../../assets/img/logo.png" alt="" />
+    <h1 (click)="home()">E-COMMERCE</h1>
+  </div>
+
+  <div *ngIf="menuType !== 'seller'" class="nav-search">
+    <input
+      type="text"
+      #searchInput
+      [(ngModel)]="searchText"
+      (keyup)="searchProduct($event)"
+      placeholder="Search for product,brands and more "
+    />
+    <button (click)="submitSearch(searchInput.value)">Search</button>
+    <ul class="suggested-result" *ngIf="searchText">
+      <li *ngFor="let item of tempProductList">
+        <a (click)="productDetails(item)">{{ item.name }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div [ngSwitch]="menuType">
+    <ul *ngSwitchCase="'default'">
+      <li><a (click)="home()" style="cursor: pointer">Home</a></li>
+      <li><a (click)="seller()" style="cursor: pointer">Seller</a></li>
+      <li><a (click)="userAuth()" style="cursor: pointer">Login/Sign-up</a></li>
+      <li *ngIf="cartItem!=0">
+        <a >Cart({{ cartItem }})</a>
+      </li>
+    </ul>
+    <ul *ngSwitchCase="'user'">
+      <li><a (click)="home()" style="cursor: pointer">Home</a></li>
+      <li><a (click)="seller()" style="cursor: pointer">Seller</a></li>
+      <li *ngIf="cartItem!=0">
+        <a (click)="cartPage()" style="cursor: pointer">Cart({{ cartItem }})</a>
+      </li>
+      <!-- <li><a>{{ userName | titlecase }}</a></li> -->
+      <li>
+        <div class="dropdown">
+          <a >{{ userName | titlecase }}</a>
+          <div class="dropdown-content">
+            <a style="cursor: pointer">Profile</a>
+            <a style="cursor: pointer" (click)="myOrders()">My Orders</a>
+          </div>
+        </div>
+      </li>
+      <li><a (click)="userLogOut()" style="cursor: pointer">Logout</a></li>
+    </ul>
+    <ul *ngSwitchCase="'seller'">
+      <li>
+        <a (click)="sellerAddProduct()" style="cursor: pointer">Add Product</a>
+      </li>
+      <li><a (click)="seller()" style="cursor: pointer">Product List</a></li>
+      <li>
+        <a>{{ sellerName | titlecase }}</a>
+      </li>
+      <li><a (click)="logOut()" style="cursor: pointer">Logout</a></li>
+    </ul>
+  </div>
+
+ </nav>

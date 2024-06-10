@@ -1,0 +1,34 @@
+<div class="row search-item" *ngFor="let item of searchResult">
+  <div class="col-sm-3">
+    <a (click)="productDetails(item)">
+      <img src="{{ item.image }}" style="cursor: pointer" />
+    </a>
+  </div>
+
+  <div class="col-sm-8 details">
+    <h6>
+      <a (click)="productDetails(item)" style="cursor: pointer">{{
+        item.name
+      }}</a>
+    </h6>
+    <p>
+      <b>Price:{{ item.price }}</b>
+    </p>
+    <p>
+      <span>Color:{{ item.color }}</span
+      ><span>Category:{{ item.category }}</span>
+    </p>
+    <p>{{ item.description }}</p>
+  </div>
+</div>
+
+<!-- <div *ngIf="message">Product Not Found</div> -->
+
+<div class="alert" *ngIf="message">
+  <!-- <button type="button" class="close" (click)="hideMessage()">
+      <span>&times;</span>
+    </button> -->
+  <h1>
+    <strong>Sorry!!!<br /><br />Product Not Found!!!</strong>
+  </h1>
+</div>

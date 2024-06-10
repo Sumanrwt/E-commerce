@@ -1,0 +1,24 @@
+.user-auth h1{
+    text-align: center;
+    color: coral;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+.auth-toggle-link{
+    display: flex;
+    
+}
+.auth-toggle-link p{
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+    
+}
+.auth-toggle-link a{
+    margin-top: 20px;
+    margin-left: 5px;
+    color: coral;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+}

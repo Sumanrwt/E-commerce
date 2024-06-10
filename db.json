@@ -1,0 +1,207 @@
+{
+  "seller": [
+    {
+      "id": "1b52",
+      "name": "hello",
+      "password": "hell@123",
+      "email": "hello@gmail.com"
+    },
+    {
+      "id": "9c2f",
+      "name": "jane",
+      "password": "jane@123",
+      "email": "jane@test.com"
+    },
+    {
+      "id": "5d81",
+      "name": "selena",
+      "password": "abc@123",
+      "email": "selena@test.gmail.com"
+    },
+    {
+      "id": "1f79",
+      "name": "sandeep",
+      "password": "1111",
+      "email": "Sumanrubyrawat9@gmail.com"
+    },
+    {
+      "id": "59fe",
+      "name": "suman",
+      "password": "asdf",
+      "email": "suman@test.com"
+    },
+    {
+      "id": "cddd",
+      "name": "kaycee",
+      "password": "kc@123",
+      "email": "kc@test.com"
+    },
+    {
+      "id": "ee4f",
+      "name": "singh",
+      "password": "abc",
+      "email": "singh@test.com"
+    }
+  ],
+  "products": [
+    {
+      "name": "samsung",
+      "price": "20000",
+      "color": "blue",
+      "category": "mobile",
+      "description": "blue samsung smart phone",
+      "image": "/assets/img/products/samsung.jpg",
+      "id": "e8cd"
+    },
+    {
+      "id": "df88",
+      "name": "nokia",
+      "price": "10000",
+      "color": "black",
+      "category": "mobile",
+      "description": "black nokia mobile",
+      "image": "/assets/img/products/samsung.jpg"
+    },
+    {
+      "id": "1731",
+      "name": "Shirt",
+      "price": "1500",
+      "color": "blue",
+      "category": "apparel",
+      "description": "blue cotton shirt",
+      "image": "/assets/img/products/shirt.jpg"
+    },
+    {
+      "id": "294d",
+      "name": "laptop",
+      "price": "15000",
+      "color": "black",
+      "category": "electronics",
+      "description": "black hp product",
+      "image": "/assets/img/products/laptop.jpg"
+    },
+    {
+      "id": "7d32",
+      "name": "jeans",
+      "price": "2000",
+      "color": "blue",
+      "category": "apparel",
+      "description": "blue women jeans",
+      "image": "/assets/img/products/jeans.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "8cca",
+      "userName": "singh",
+      "userEmail": "singh@user.com",
+      "userPassword": "abc"
+    },
+    {
+      "id": "3469",
+      "userName": "test",
+      "userEmail": "test@user.com",
+      "userPassword": "abc"
+    }
+  ],
+  "cart": [
+    {
+      "id": "d4e3",
+      "name": "nokia",
+      "price": "10000",
+      "color": "black",
+      "category": "mobile",
+      "description": "black nokia mobile",
+      "image": "/assets/img/products/samsung.jpg",
+      "quantity": 1,
+      "productId": "df88",
+      "userId": "3469"
+    },
+    {
+      "id": "5eed",
+      "name": "Shirt",
+      "price": "1500",
+      "color": "blue",
+      "category": "apparel",
+      "description": "blue cotton shirt",
+      "image": "/assets/img/products/shirt.jpg",
+      "quantity": 1,
+      "userId": "3469",
+      "productId": "1731"
+    },
+    {
+      "id": "e2ed",
+      "name": "samsung",
+      "price": "30000",
+      "color": "blue",
+      "category": "mobile",
+      "description": "blue samsung smart phone",
+      "image": "/assets/img/products/samsung.jpg",
+      "quantity": 1,
+      "productId": "e8cd",
+      "userId": "3469"
+    },
+    {
+      "id": "9b93",
+      "name": "nokia",
+      "price": "10000",
+      "color": "black",
+      "category": "mobile",
+      "description": "black nokia mobile",
+      "image": "/assets/img/products/samsung.jpg",
+      "quantity": 1,
+      "userId": "3469",
+      "productId": "df88"
+    },
+    {
+      "id": "6dea",
+      "name": "nokia",
+      "price": "10000",
+      "color": "black",
+      "category": "mobile",
+      "description": "black nokia mobile",
+      "image": "/assets/img/products/samsung.jpg",
+      "quantity": 1,
+      "userId": "3469",
+      "productId": "df88"
+    },
+    {
+      "id": "1422",
+      "name": "laptop",
+      "price": "15000",
+      "color": "black",
+      "category": "electronics",
+      "description": "black hp product",
+      "image": "/assets/img/products/laptop.jpg",
+      "quantity": 1,
+      "userId": "3469",
+      "productId": "294d"
+    }
+  ],
+  "orders": [
+    {
+      "id": "0328",
+      "userEmail": "singh@user.com",
+      "Address": "noida x",
+      "mobileNo": "156467",
+      "totalPrice": 100100,
+      "userId": "8cca"
+    },
+    {
+      "id": "8ec3",
+      "userEmail": "",
+      "Address": "",
+      "mobileNo": "",
+      "totalPrice": 133100,
+      "userId": "8cca"
+    },
+    {
+      "id": "264b",
+      "userEmail": "singh@user.com",
+      "Address": "asgafsg",
+      "mobileNo": "12356789",
+      "totalPrice": 30100,
+      "userId": "8cca"
+    }
+  ]
+}
